@@ -15,7 +15,7 @@ public class CalcLogger {
         this.logger = Logger.getLogger(CalcLogger.class.getName());
 
         try {
-            this.fileHandler = new FileHandler("Logs.txt");
+            this.fileHandler = new FileHandler("CalcLogs.txt");
             logger.addHandler(fileHandler);
             this.simpleFormatter = new SimpleFormatter();
             fileHandler.setFormatter(simpleFormatter);
